@@ -1,0 +1,477 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+  }
+  .loginpage{
+    background-color: whitesmoke;
+    width: 50%;
+  }
+  .loginpage_header{
+    background-color:whitesmoke;
+    color: black;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    display: flex;
+  }
+  .loginpage_icon{
+    margin-right: 10px;
+  }
+  .loginpage_title{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 7px;
+  }
+
+  .loginpage_middiletext{
+    text-align: center;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    margin-left:20% ;
+    margin-right: 20%;
+
+  }
+fieldset{
+  background-color: white;
+  border: 1px solid #ccc; 
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+input{
+  margin: -10px;
+  border: transparent;
+  border-radius: 1px solod transparent;
+  outline: none;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+input[type="email"]::placeholder {
+  font-size: 15px; /* Adjust the size as needed */
+  color: #aaa; /* Optional: Change placeholder text color */
+}
+
+input[type="password"]::placeholder {
+  font-size: 15px; /* Adjust the size as needed */
+  color: #aaa; /* Optional: Change placeholder text color */
+}
+
+.input_group{
+  margin-left: 50px;
+}
+
+.fa-envelope {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #888;
+}
+.fa-eye {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #888;
+}
+fieldset:hover{
+  border: 1.5px solid royalblue;
+  border-radius: 5px;
+}
+
+fieldset:focus-within {
+  border: 1.5px solid salmon;
+  border-radius: 5px;
+}
+
+.signup-btn{
+  text-align: center;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  background-color: royalblue;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left:145px ;
+  padding-right: 145px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  font-size: 18px;
+}
+
+.signup-btn:hover{
+  background-color: #0a84df;
+  box-shadow: 0 0 15px 5px rgba(7, 123, 231, 0.8); /* Glowing effect */
+}
+.signuptxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.line1 {
+  flex-grow: 1; /* Make the line stretch */
+  height: 1px; /* Line thickness */
+  background-color: #ccc; /* Line color */
+  margin-left: 160px;
+}
+
+.line2 {
+  flex-grow: 1; /* Make the line stretch */
+  height: 1px; /* Line thickness */
+  background-color: #ccc; /* Line color */
+  margin-right:160px ;
+}
+
+.txt {
+  font-size: 16px; /* Adjust text size */
+  font-weight: bold;
+  color: royalblue;
+}
+
+.login_account{
+  text-align: center;
+  margin-top: 20px;
+}
+.facebook-btn, .google-btn, .apple-btn{
+  border: 1px solid salmon;
+  border-radius: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.facebook-btn:hover{
+  background-color: #0a84df;
+  box-shadow: 0 0 15px 5px rgba(7, 123, 231, 0.8); /* Glowing effect */
+}
+.google-btn:hover{
+  background-color: #db4437;
+  box-shadow: 0 0 15px 5px rgba(219, 68, 55, 0.8); /* Glowing effect */
+}
+.apple-btn:hover{
+  background-color: #221c1cc4;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8); /* Glowing effect */
+}
+
+.registration-link{
+  margin-top: 50px;
+  font-size: 12px;
+}
+.registration-link p{
+  padding-left: 25px;
+}
+.registration-link a{
+  color: royalblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registration-link a:hover{
+  color: #0a84df;
+  text-shadow: 0 0 15px rgba(8, 129, 243, 0.904); /* Glowing effect */
+}
+
+.image-gallery{
+  width: 100%;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;  /* Position the dots 10px from the bottom */
+  right: 10px;   /* Position the dots 10px from the right */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: whitesmoke;
+  margin: 5px;  /* Adjust margin to control spacing between dots */
+  border-radius: 50%;  /* Make them round */
+}
+
+.dots li.active {
+  width: 20px;
+  height: 10px;  /* Make the active dot bigger */
+  border-radius: 5px;
+}
+
+.dots li:hover {
+  background-color: royalblue;
+}
+
+.imagegallery{
+  width: 50%;
+}
+.slideshow{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .loginpage{
+    width: 100%;
+    background-color: white;
+  }
+  .loginpage:hover{
+    background-image: url('./pexels-erik-karits-2093459-18683300.jpg');
+    background-size: cover;
+  }
+  .loginpage_header{
+    margin-left: 0;
+    background: transparent;
+  }
+  .loginpage_header:hover{
+    color: white;
+  }
+  .loginpage_title{
+    font-size: 18px;
+  }
+  .loginpage_middiletext{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: royalblue;
+    text-shadow: 0 0 15px rgba(14, 15, 15, 0.8); /* Glowing effect */
+  }
+
+  form{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .input_group{
+    margin:0;
+  }
+  .signup-btn{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .signuptxt{
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .login_account{
+    margin-top: 10px;
+  }
+  .facebook-btn, .google-btn, .apple-btn{
+    border: 1px solid salmon;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+  .registration-link{
+    margin-top: 30px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+  }
+  .image-gallery{
+    display: none;
+  }
+  .imagegallery{
+    display: none;
+  }
+  .slideshow{
+    display: none;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .loginpage{
+    width: 50%;
+    background-color: white;
+  }
+
+  .loginpage_header{
+    margin-left: 0;
+    background: transparent;
+  }
+  .loginpage_title{
+    font-size: 18px;
+  }
+  .loginpage_middiletext{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: royalblue;
+    text-shadow: 0 0 15px rgba(14, 15, 15, 0.8); /* Glowing effect */
+  }
+
+  form{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .input_group{
+    margin:0;
+  }
+  .signup-btn{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .signuptxt{
+    margin-top: 10px;
+  }
+  .line1 {
+    margin-left: 80px;
+  }
+  .line2 {
+    margin-right: 80px ;
+  }
+  
+  .txt {
+    font-size: 16px; /* Adjust text size */
+    font-weight: bold;
+    color: royalblue;
+  }
+  
+  .login_account{
+    margin-top: 15px;
+  }
+  .facebook-btn, .google-btn, .apple-btn{
+    border: 1px solid salmon;
+    border-radius: 5px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+  .registration-link{
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+
+  .slideshow .slideImage:nth-child(1) {
+    content: url('./pexels-steve-29612109.jpg');
+    width: 100%;
+    height: 100%;
+  }
+  .slideshow .slideImage:nth-child(2) {
+    content: url('./pexels-steve-29833480.jpg');
+    width: 100%;
+    height: 100%;
+  }
+  .slideshow .slideImage:nth-child(5) {
+    content: url('./pexels-hngstrm-1939485.jpg');
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px ) {
+  .loginpage{
+    width: 50%;
+    background-color: white;
+  }
+
+  .loginpage_header{
+    margin-left: 0;
+    background: transparent;
+  }
+  .loginpage_title{
+    font-size: 18px;
+  }
+  .loginpage_middiletext{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: royalblue;
+    text-shadow: 0 0 15px rgba(14, 15, 15, 0.8); /* Glowing effect */
+  }
+
+  form{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .input_group{
+    margin:0;
+  }
+  .signup-btn{
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  .signuptxt{
+    margin-top: 10px;
+  }
+  .line1 {
+    margin-left: 130px;
+  }
+  .line2 {
+    margin-right: 130px ;
+  }
+  
+  .txt {
+    font-size: 16px; /* Adjust text size */
+    font-weight: bold;
+    color: royalblue;
+  }
+  
+  .login_account{
+    margin-top: 15px;
+  }
+  .facebook-btn, .google-btn, .apple-btn{
+    border: 1px solid salmon;
+    border-radius: 5px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+  .registration-link{
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+
+  .slideshow .slideImage:nth-child(1) {
+    content: url('./pexels-steve-29612109.jpg');
+    width: 100%;
+    height: 100%;
+  }
+  .slideshow .slideImage:nth-child(2) {
+    content: url('./pexels-steve-29833480.jpg');
+    width: 100%;
+    height: 100%;
+  }
+  .slideshow .slideImage:nth-child(5) {
+    content: url('./pexels-hngstrm-1939485.jpg');
+    width: 100%;
+    height: 100%;
+  }
+}
