@@ -229,7 +229,93 @@ fieldset:focus-within {
 
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+  .loginpage{
+    width: 100%;
+    background-color: white;
+  }
+
+  .loginpage_header{
+    margin-left: 0;
+    background: transparent;
+  }
+  .loginpage_header:hover{
+    color: white;
+  }
+  .loginpage_title{
+    font-size: 18px;
+  }
+  .loginpage_middiletext{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: royalblue;
+    text-shadow: 0 0 15px rgba(14, 15, 15, 0.8); /* Glowing effect */
+  }
+
+  form{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .input_group{
+    margin:0;
+  }
+  .signup-btn{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .signuptxt{
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .signuptxt{
+    margin-top: 10px;
+  }
+  .line1 {
+    margin-left: 1px;
+  }
+  .line2 {
+    margin-right: 1px ;
+  }
+  .login_account{
+    margin-top: 10px;
+  }
+  .facebook-btn, .google-btn, .apple-btn{
+    border: 1px solid salmon;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .facebook-btn, .google-btn{
+    margin-right: 25px;
+  }
+
+  .registration-link{
+    margin-top: 30px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+  }
+  .image-gallery{
+    display: none;
+  }
+  .imagegallery{
+    display: none;
+  }
+  .slideshow{
+    display: none;
+  }
+  
+}
+@media (min-width: 500px ) and (max-width: 768px) {
   .loginpage{
     width: 100%;
     background-color: white;
@@ -303,6 +389,7 @@ fieldset:focus-within {
   }
   
 }
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .loginpage{
