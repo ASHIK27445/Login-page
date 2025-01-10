@@ -239,9 +239,6 @@ fieldset:focus-within {
     margin-left: 0;
     background: transparent;
   }
-  .loginpage_header:hover{
-    color: white;
-  }
   .loginpage_title{
     font-size: 18px;
   }
@@ -269,13 +266,10 @@ fieldset:focus-within {
   .signuptxt{
     margin-left: 42px;
     margin-right: 42px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 15px;
   }
-
-  .signuptxt{
-    margin-top: 10px;
-  }
+  
   .line1 {
     margin-left: 1px;
   }
@@ -300,7 +294,7 @@ fieldset:focus-within {
   }
 
   .registration-link{
-    margin-top: 30px;
+    margin-top: 80px;
     padding-left: 5px;
     padding-bottom: 5px;
   }
@@ -314,6 +308,9 @@ fieldset:focus-within {
     display: none;
   }
   
+  .loginpage_middiletext{
+    margin-top: 40px;
+  }
 }
 @media (min-width: 500px ) and (max-width: 768px) {
   .loginpage{
@@ -389,7 +386,6 @@ fieldset:focus-within {
   }
   
 }
-
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .loginpage{
